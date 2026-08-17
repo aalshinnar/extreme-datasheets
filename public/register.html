@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Extreme Networks Datasheets</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <h1><a href="/">📊 Extreme Networks Datasheets</a></h1>
+      </div>
+      <div class="navbar-menu">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/login" class="nav-link">Login</a>
+        <a href="/register" class="nav-link active">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="auth-form-container">
+      <div class="auth-form">
+        <h2>Create Account</h2>
+        <p class="form-subtitle">Join to access Extreme Networks datasheets</p>
+
+        <form id="registerForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Min 8 characters">
+            <small>Password must be at least 8 characters long</small>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm password">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+
+          <div id="error" class="alert alert-error" style="display: none;"></div>
+          <div id="success" class="alert alert-success" style="display: none;"></div>
+        </form>
+
+        <p class="form-footer">
+          Already have an account? <a href="/login">Login here</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Extreme Networks Datasheets Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/auth.js"></script>
+  <script src="/assets/js/register.js"></script>
+</body>
+</html>

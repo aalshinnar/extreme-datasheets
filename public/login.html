@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Extreme Networks Datasheets</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <h1><a href="/">📊 Extreme Networks Datasheets</a></h1>
+      </div>
+      <div class="navbar-menu">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/login" class="nav-link active">Login</a>
+        <a href="/register" class="nav-link">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="auth-form-container">
+      <div class="auth-form">
+        <h2>Login</h2>
+        <p class="form-subtitle">Sign in to access datasheets</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="••••••••">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+          <div id="error" class="alert alert-error" style="display: none;"></div>
+          <div id="success" class="alert alert-success" style="display: none;"></div>
+        </form>
+
+        <p class="form-footer">
+          Don't have an account? <a href="/register">Register here</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Extreme Networks Datasheets Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/auth.js"></script>
+  <script src="/assets/js/login.js"></script>
+</body>
+</html>

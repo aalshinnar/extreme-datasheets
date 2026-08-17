@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Extreme Networks Datasheets</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <h1><a href="/">📊 Extreme Networks Datasheets</a></h1>
+      </div>
+      <div class="navbar-menu">
+        <a href="/dashboard" class="nav-link active">Dashboard</a>
+        <span id="userEmail" class="nav-text"></span>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="dashboard-header">
+      <h2>Datasheets Library</h2>
+      <p id="userGreeting" class="greeting"></p>
+    </div>
+
+    <section class="search-section">
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by product name or keyword..."
+          class="search-input"
+        >
+        <input
+          type="text"
+          id="productFilter"
+          placeholder="Filter by product..."
+          class="filter-input"
+        >
+        <input
+          type="text"
+          id="categoryFilter"
+          placeholder="Filter by category..."
+          class="filter-input"
+        >
+        <button id="searchBtn" class="btn btn-primary">Search</button>
+      </div>
+    </section>
+
+    <section class="datasheets-section">
+      <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+
+      <div id="datasheetsList" class="datasheets-grid">
+        <!-- Datasheets will be loaded here -->
+      </div>
+
+      <div id="noResults" class="alert alert-info" style="display: none;">
+        No datasheets found. Try adjusting your search filters.
+      </div>
+
+      <div id="pagination" class="pagination">
+        <!-- Pagination controls will be added here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Extreme Networks Datasheets Portal. All rights reserved.</p>
+  </footer>
+
+  <div id="downloadModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <div id="modalStats"></div>
+      <button id="downloadBtn" class="btn btn-primary">Download</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/auth.js"></script>
+  <script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

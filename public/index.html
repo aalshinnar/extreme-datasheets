@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extreme Networks Datasheets</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <h1>📊 Extreme Networks Datasheets</h1>
+      </div>
+      <div class="navbar-menu">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/login" class="nav-link" id="loginLink">Login</a>
+        <a href="/register" class="nav-link" id="registerLink">Register</a>
+        <a href="#" class="nav-link" id="dashboardLink" style="display: none;">Dashboard</a>
+        <button id="logoutBtn" class="btn btn-secondary" style="display: none;">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to Extreme Networks Datasheets Portal</h2>
+      <p>Access all Extreme Networks product documentation and datasheets in one secure location.</p>
+      <div class="button-group">
+        <a href="/login" class="btn btn-primary" id="heroLoginBtn">Login</a>
+        <a href="/register" class="btn btn-secondary" id="heroRegisterBtn">Register</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3>Features</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>🔒 Secure Access</h4>
+          <p>Email verification and password protection ensure only authorized users can access datasheets.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🔍 Easy Search</h4>
+          <p>Find datasheets quickly using our full-text search by product name or keywords.</p>
+        </div>
+        <div class="feature-card">
+          <h4>⬇️ Download Anytime</h4>
+          <p>Access and download datasheets in PDF format whenever you need them.</p>
+        </div>
+        <div class="feature-card">
+          <h4>📈 Organization</h4>
+          <p>Datasheets are organized by product category for easy navigation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <h3>Portal Statistics</h3>
+      <div id="statsContainer" class="stats-grid">
+        <div class="stat-card">
+          <h4 id="totalDatasheets">-</h4>
+          <p>Total Datasheets</p>
+        </div>
+        <div class="stat-card">
+          <h4 id="totalDownloads">-</h4>
+          <p>Total Downloads</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Extreme Networks Datasheets Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/auth.js"></script>
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>
